@@ -35,4 +35,10 @@ A .svg file with the name of the input file name will be generated. Open it with
 
 ## Limitations
 
-The final image is not fully readable when generating GLPI core schema. It should be sufficient for plugins.
+The final image is not fully readable when generating GLPI core schema (too many relation share the same path and it is impossible to follow one of them, like in a plate of spaghettis). It should be sufficient for plugins.
+
+Relations between tables composed of pair of columns itemtype / items_id are not supported.
+
+A good explanation is available here: http://duhallowgreygeek.com/polymorphic-association-bad-sql-smell/
+
+Some aditionnal reading abour polymorphic relations: https://laravel.com/docs/9.x/eloquent-relationships#one-to-one-polymorphic-relations
